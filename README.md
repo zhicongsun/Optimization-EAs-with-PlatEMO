@@ -1,2 +1,2 @@
 # Optimization EAs with PlatEMO
-Our algorithm is SPEAPRO, in the Algorithm file.
+Our algorithm SPEA2PRO is in the ’Algorithms‘ file.
