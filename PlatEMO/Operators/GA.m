@@ -64,6 +64,7 @@ function Offspring = GA(Parent,Parameter)
             %% Genetic operators for binary encoding
             % One point crossover
             k = repmat(1:D,N,1) > repmat(randi(D,N,1),1,D);
+            a = 1
             k(repmat(rand(N,1)>proC,1,D)) = false;
             Offspring1    = Parent1;
             Offspring2    = Parent2;

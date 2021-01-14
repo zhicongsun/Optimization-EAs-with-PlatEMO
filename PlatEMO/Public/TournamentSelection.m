@@ -18,10 +18,9 @@ function index = TournamentSelection(K,N,varargin)
 % for evolutionary multi-objective optimization [educational forum], IEEE
 % Computational Intelligence Magazine, 2017, 12(4): 73-87".
 %--------------------------------------------------------------------------
-
     varargin = cellfun(@(S)reshape(S,[],1),varargin,'UniformOutput',false);
     [~,rank] = sortrows([varargin{:}]);
-    [~,rank] = sort(rank);
+%     [~,rank] = sort(rank);
     Parents  = randi(length(varargin{1}),K,N);
     [~,best] = min(rank(Parents),[],1);
     index    = Parents(best+(0:N-1)*K);
